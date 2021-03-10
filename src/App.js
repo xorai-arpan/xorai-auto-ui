@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import { Component } from 'react';
+import Header from './Header';
+import ImageComponent from './ImageComponent';
+import EditNote from './EditNoteComponent';
+import SavedComments from './SavedCommentsComponent';
+
+
+
+class App extends Component {
+
+  fileChangedHandler = (event) => {
+    // const file = event.target.files[0]
+    const file = event.target.files[0];
+    console.log(file);
+  }
+
+  render(){
+    return (
+      <div className="App">
+        {/* <input type="file" onChange={this.fileChangedHandler}/> */}
+        <Header/>
+        <ImageComponent />
+        <EditNote />
+        <SavedComments />
+      </div>
+    );
+  }
+  }
+
+
 
 export default App;

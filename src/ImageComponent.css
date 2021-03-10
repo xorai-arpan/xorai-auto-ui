@@ -1,0 +1,28 @@
+.image_component {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  background-color: #131921;
+  height: 100px;
+}
+
+.camera {
+  object-fit: contain;
+  color: aliceblue;
+  margin: auto;
+}
+
+/* .library {
+  object-fit: contain;
+  color: aliceblue;
+  margin: auto;
+} */
+
+.file {
+  color: aliceblue;
+  margin: auto;
+}
+
+.display {
+  margin: auto;
+}

@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  position: sticky;
+  /* height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100; */
+}
+
+.header_back {
+  width: 20px;
+  object-fit: contain;
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
+.header_edit {
+  height: 30px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.header_empty {
+  width: 20px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+/* .edit_note {
+  align-content: center;
+} */
